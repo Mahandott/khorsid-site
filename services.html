@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خدمات و دوره‌ها | آموزشگاه خورشید بهبهان</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== SVG ICON DEFS ===================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="i-phone"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="i-pin"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2.2"/></g>
+    <g id="i-clock"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></g>
+    <g id="i-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></g>
+    <g id="i-video"><rect x="2" y="6" width="13" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15 10.5 6-3.5v10l-6-3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></g>
+    <g id="i-calendar"><rect x="3" y="4" width="18" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 2v4M16 2v4M3 9.5h18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></g>
+    <g id="i-exam"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M14 2v5h5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="m9 15 2 2 4-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="i-compass"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15.5 8.5-2 5-5 2 2-5z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></g>
+    <g id="i-grad"><path d="M22 10 12 5 2 10l10 5 10-5z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></g>
+    <g id="i-check"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="i-arrow"><path d="M19 12H5M12 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="i-star"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8-6.1-3.4-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z" fill="currentColor"/></g>
+    <g id="i-ig"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></g>
+    <g id="i-send"><path d="M22 2 11 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M22 2 15 22l-4-9-9-4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></g>
+    <g id="i-chat"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 9 9 0 0 1-3.8-.8L3 21l1.9-5.3a8.4 8.4 0 0 1 .7-11.2 8.4 8.4 0 0 1 15.4-3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></g>
+    <g id="i-menu"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></g>
+  </defs>
+</svg>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="assets/logo.png" alt="لوگوی آموزشگاه خورشید">
+      <span>
+        <span class="brand-name">آموزشگاه خورشید</span><br>
+        <span class="brand-sub">مرکز مشاوره کنکور و آموزشی | بهبهان</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">خانه</a>
+      <a href="services.html" class="active">خدمات</a>
+      <a href="services.html#doreh">دوره‌ها</a>
+      <a href="index.html#natayej">نتایج</a>
+      <a href="index.html#about">درباره ما</a>
+      <a href="contact.html">تماس با ما</a>
+    </nav>
+    <div class="header-actions">
+      <a class="phone-chip" href="tel:06152734946"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg>۰۶۱-۵۲۷۳۴۹۴۶</a>
+      <a class="btn btn-gold btn-sm" href="contact.html">رزرو مشاوره رایگان</a>
+      <button class="burger" aria-label="منو"><svg viewBox="0 0 24 24"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero dots">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">خانه</a><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg><span>خدمات و دوره‌ها</span></div>
+    <h1>هر چیزی که مسیر قبولی لازم دارد، <span class="hl">یک‌جا</span></h1>
+    <p class="sec-sub">خدمات مشاوره و آموزش خورشید؛ از جلسه‌ی اول شناخت تا روز کنکور — حضوری در بهبهان، آنلاین در سراسر کشور.</p>
+  </div>
+</section>
+
+<!-- ===================== SERVICES DETAIL ===================== -->
+<section class="sec" style="padding-top:20px">
+  <div class="container">
+    <div class="svc2-grid">
+      <div class="svc2 card">
+        <div class="svc2-head">
+          <span class="ico ic-gold"><svg viewBox="0 0 24 24"><use href="#i-users"/></svg></span>
+          <h3>مشاوره حضوری کنکور</h3>
+        </div>
+        <p>جلسات رودررو در مرکز بهبهان؛ جایی که مشاور وضعیت واقعی دانش‌آموز را می‌بیند و مسیر را با خودش می‌سازد، نه بر اساس یک فرمول عمومی.</p>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> مصاحبه‌ی شناخت با دانش‌آموز و والدین</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> تعیین هدف و ساخت مسیر فردی تا کنکور</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> جلسات دوره‌ای بررسی پیشرفت و رفع موانع</li>
+        </ul>
+        <div class="chips"><span class="chip">حضوری</span><span class="chip">بهبهان</span><span class="chip">از پایه نهم تا دوازدهم</span></div>
+      </div>
+      <div class="svc2 card gold" style="background:var(--gold)">
+        <div class="svc2-head">
+          <span class="ico" style="background:#fff"><svg viewBox="0 0 24 24"><use href="#i-video"/></svg></span>
+          <h3>مشاوره آنلاین و تلفنی</h3>
+        </div>
+        <p>ساکن بهبهان نیستی؟ هیچ مشکلی؛ کل مسیر مشاوره، برنامه‌ریزی و پشتیبانی به‌صورت آنلاین در دسترس توئه — همین کیفیت، بدون محدودیت جغرافیا.</p>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> جلسات تصویری منظم با مشاور اختصاصی</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> برنامه‌ی هفتگی PDF و پیگیری اجرای آن</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> پاسخ‌گویی روزانه و رفع اشکال در تلگرام</li>
+        </ul>
+        <div class="chips"><span class="chip" style="background:#fff">آنلاین</span><span class="chip" style="background:#fff">سراسر کشور</span></div>
+      </div>
+      <div class="svc2 card">
+        <div class="svc2-head">
+          <span class="ico ic-orange"><svg viewBox="0 0 24 24"><use href="#i-calendar"/></svg></span>
+          <h3>برنامه‌ریزی اختصاصی هفتگی</h3>
+        </div>
+        <p>برنامه‌ای مکتوب و دقیق که بر اساس آزمون‌ها، بازخورد هفتگی و فاصله‌ی شما تا هدف ساخته و هر هفته اصلاح می‌شود.</p>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> برنامه‌ی مکتوب هفتگی با ساعات مطالعه‌ی مشخص</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> اصلاح برنامه بر اساس آزمون و بازخورد</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> هدف‌گذاری روزانه، هفتگی و بلندمدت</li>
+        </ul>
+        <div class="chips"><span class="chip">همه‌ی پایه‌ها</span><span class="chip">کنکور تجربی و ریاضی</span></div>
+      </div>
+      <div class="svc2 card">
+        <div class="svc2-head">
+          <span class="ico ic-green"><svg viewBox="0 0 24 24"><use href="#i-exam"/></svg></span>
+          <h3>آزمون آزمایشی و تحلیل</h3>
+        </div>
+        <p>آزمون‌های استاندارد در مقیاس واقعی کنکور، به‌همراه تحلیل دقیق اشکال؛ چون رتبه در تحلیل آزمون ساخته می‌شود، نه فقط در مطالعه.</p>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> آزمون در استاندارد زمان و سؤالات کنکور</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> کارنامه و تحلیل اشکال درس‌به‌درس</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> جلسه‌ی بررسی کارنامه با مشاور</li>
+        </ul>
+        <div class="chips"><span class="chip">کنکور</span><span class="chip">تیزهوشان</span></div>
+      </div>
+      <div class="svc2 card">
+        <div class="svc2-head">
+          <span class="ico" style="background:var(--gold)"><svg viewBox="0 0 24 24"><use href="#i-grad"/></svg></span>
+          <h3>کلاس‌های آموزشی تخصصی</h3>
+        </div>
+        <p>تدریس دبیران منتخب کنکور در گروه‌های کوچک؛ کاملاً هماهنگ با برنامه‌ی مشاوره‌ای هر دانش‌آموز تا کلاس و برنامه به هم ضربه نزنند.</p>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> دبیران مجرب و منتخب کنکور</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> گروه‌های کوچک ۱۰ تا ۱۴ نفره</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> پیش‌خوانی، جمع‌بندی و رفع اشکال مستمر</li>
+        </ul>
+        <div class="chips"><span class="chip">پایه دهم تا دوازدهم</span><span class="chip">حضوری</span></div>
+      </div>
+      <div class="svc2 card">
+        <div class="svc2-head">
+          <span class="ico ic-gold"><svg viewBox="0 0 24 24"><use href="#i-compass"/></svg></span>
+          <h3>انتخاب رشته و هدایت تحصیلی</h3>
+        </div>
+        <p>تصمیم‌های سرنوشت‌ساز با مشورت درست؛ از هدایت تحصیلی پایه نهم تا انتخاب رشته‌ی کنکور، همراه خانواده و بر اساس داده، نه حدس.</p>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> مشاوره‌ی هدایت تحصیلی پایه نهم</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> آمادگی آزمون تیزهوشان و نمونه‌دولتی</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span> انتخاب رشته‌ی دقیق کنکور با تحلیل کارنامه</li>
+        </ul>
+        <div class="chips"><span class="chip">پایه نهم</span><span class="chip">پایه دوازدهم</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COURSES ===================== -->
+<section class="sec dots" id="doreh" style="border-block:2px solid var(--ink)">
+  <div class="container">
+    <div class="sec-head">
+      <span class="pill pill-gold">دوره‌های آموزشی</span>
+      <h2>کلاس‌هایی که با <span class="hl">کنکور</span> هماهنگ‌اند</h2>
+      <p class="sec-sub">گروه‌های کوچک، دبیران منتخب و هماهنگی کامل با برنامه‌ی مشاوره‌ای هر دانش‌آموز.</p>
+    </div>
+    <div class="course-grid">
+      <div class="course card">
+        <div class="course-top">
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip">پایه دهم</span><span class="chip">ریاضی و تجربی</span></div>
+        </div>
+        <h3>دوره‌ی پایه‌ی دهم</h3>
+        <p>تثبیت مفاهیم پایه هم‌زمان با مدرسه و پیش‌خوانی هوشمند برای کنکور.</p>
+        <ul class="meta-list">
+          <li><svg viewBox="0 0 24 24"><use href="#i-calendar"/></svg> شروع ترم: آبان‌ماه ۱۴۰۵</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg> جلسات: شنبه و چهارشنبه، هر هفته</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-users"/></svg> ظرفیت گروه: ۱۲ نفر</li>
+        </ul>
+        <div class="course-foot">
+          <a class="btn btn-white btn-sm" href="contact.html">ثبت‌نام</a>
+          <span class="chip chip-soft">ظرفیت باز</span>
+        </div>
+      </div>
+      <div class="course card">
+        <div class="course-top">
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip">پایه یازدهم</span><span class="chip">ریاضی و تجربی</span></div>
+        </div>
+        <h3>دوره‌ی پایه‌ی یازدهم</h3>
+        <p>تثبیت مفاهیم کلیدی سخت‌ترین سال کنکور و شروع جمع‌بندی زودهنگام.</p>
+        <ul class="meta-list">
+          <li><svg viewBox="0 0 24 24"><use href="#i-calendar"/></svg> شروع ترم: آبان‌ماه ۱۴۰۵</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg> جلسات: یک‌شنبه و سه‌شنبه، هر هفته</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-users"/></svg> ظرفیت گروه: ۱۲ نفر</li>
+        </ul>
+        <div class="course-foot">
+          <a class="btn btn-white btn-sm" href="contact.html">ثبت‌نام</a>
+          <span class="chip chip-soft">ظرفیت باز</span>
+        </div>
+      </div>
+      <div class="course card gold">
+        <span class="seats">ظرفیت محدود</span>
+        <div class="course-top">
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip" style="background:#fff">پایه دوازدهم</span><span class="chip" style="background:#fff">کنکور ۱۴۰۵</span></div>
+        </div>
+        <h3>دوره‌ی دوازدهم و جمع‌بندی</h3>
+        <p>مرور جامع دروس عمومی و اختصاصی + آزمون‌های منظم در مقیاس کنکور.</p>
+        <ul class="meta-list">
+          <li><svg viewBox="0 0 24 24"><use href="#i-calendar"/></svg> شروع ترم: آبان‌ماه ۱۴۰۵</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg> جلسات: سه روز در هفته + آزمون جمعه</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-users"/></svg> ظرفیت گروه: ۱۰ نفر</li>
+        </ul>
+        <div class="course-foot">
+          <a class="btn btn-dark btn-sm" href="contact.html">رزرو سریع</a>
+          <span class="chip" style="background:#fff">۲ جای خالی</span>
+        </div>
+      </div>
+      <div class="course card">
+        <div class="course-top">
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip">پایه نهم</span><span class="chip">تیزهوشان و نمونه‌دولتی</span></div>
+        </div>
+        <h3>دوره‌ی آمادگی تیزهوشان</h3>
+        <p>آمادگی آزمون مدارس برتر با تمرکز بر هوش، ریاضی و علوم + مشاوره‌ی هدایت تحصیلی.</p>
+        <ul class="meta-list">
+          <li><svg viewBox="0 0 24 24"><use href="#i-calendar"/></svg> شروع ترم: آذر‌ماه ۱۴۰۵</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg> جلسات: دوشنبه، هر هفته</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-users"/></svg> ظرفیت گروه: ۱۴ نفر</li>
+        </ul>
+        <div class="course-foot">
+          <a class="btn btn-white btn-sm" href="contact.html">ثبت‌نام</a>
+          <span class="chip chip-soft">ظرفیت باز</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW TO START ===================== -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="pill pill-orange">مسیر مشاوره</span>
+      <h2>ثبت‌نام فقط <span class="hl">۴ قدم</span> دارد</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">۰۱</div>
+        <h3>رزرو جلسه</h3>
+        <p>تماس یا پر کردن فرم رزرو مشاوره‌ی رایگان.</p>
+      </div>
+      <div class="step">
+        <div class="num">۰۲</div>
+        <h3>جلسه‌ی شناخت</h3>
+        <p>مصاحبه‌ی اولیه با دانش‌آموز و والدین.</p>
+      </div>
+      <div class="step">
+        <div class="num">۰۳</div>
+        <h3>تعیین سطح</h3>
+        <p>آزمون و تحلیل وضعیت درسی فعلی.</p>
+      </div>
+      <div class="step">
+        <div class="num">۰۴</div>
+        <h3>شروع مسیر</h3>
+        <p>دریافت برنامه‌ی اختصاصی و شروع همراهی.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section style="padding-bottom:88px">
+  <div class="container">
+    <div class="cta-band card" style="box-shadow:7px 7px 0 var(--ink)">
+      <div style="flex:1;min-width:260px">
+        <h2>مطمئن نیستی کدام مسیر برای توئه؟</h2>
+        <p>در جلسه‌ی اول رایگان، مشاور وضعیتت را می‌بیند و مسیر پیشنهادی را می‌گوید.</p>
+      </div>
+      <div class="cta-phones">
+        <span class="pill">۰۹۱۶ ۸۷۵ ۷۱۹۱</span>
+        <a class="btn btn-dark" href="contact.html">رزرو مشاوره رایگان</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="f-brand">
+        <img class="f-logo" src="assets/logo.png" alt="لوگوی خورشید">
+        <div><b>آموزشگاه خورشید</b><small>بهبهان | خوزستان</small></div>
+      </div>
+      <p class="f-about">اولین مرکز مشاوره‌ی کنکور جنوب‌غرب کشور؛ مشاوره تخصصی، برنامه‌ریزی اختصاصی و کلاس‌های آموزشی از پایه‌ی نهم تا کنکور، حضوری و آنلاین.</p>
+      <div class="socials">
+        <a href="#" aria-label="اینستاگرام"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+        <a href="#" aria-label="تلگرام"><svg viewBox="0 0 24 24"><use href="#i-send"/></svg></a>
+        <a href="#" aria-label="واتساپ"><svg viewBox="0 0 24 24"><use href="#i-chat"/></svg></a>
+        <a href="tel:06152734946" aria-label="تلفن"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h4>خدمات</h4>
+      <ul>
+        <li><a href="services.html">مشاوره حضوری کنکور</a></li>
+        <li><a href="services.html">مشاوره آنلاین و تلفنی</a></li>
+        <li><a href="services.html">برنامه‌ریزی اختصاصی</a></li>
+        <li><a href="services.html">آزمون آزمایشی</a></li>
+        <li><a href="services.html#doreh">کلاس‌های آموزشی</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>دسترسی سریع</h4>
+      <ul>
+        <li><a href="index.html#about">درباره‌ی خورشید</a></li>
+        <li><a href="index.html#natayej">نتیجه‌ها و رضایت</a></li>
+        <li><a href="contact.html">رزرو مشاوره رایگان</a></li>
+        <li><a href="contact.html">سوالات پرتکرار</a></li>
+        <li><a href="#">وبلاگ آموزشی</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>تماس با ما</h4>
+      <ul class="f-contact">
+        <li><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg><span><b>۰۹۱۶ ۸۷۵ ۷۱۹۱</b> / <b>۰۶۱-۵۲۷۳۴۹۴۶</b></span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg><span>بهبهان، خوزستان</span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg><span>شنبه تا پنج‌شنبه | ۸ صبح تا ۸ شب</span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg><span>@behbahan_konkoor</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© ۱۴۰۵ آموزشگاه خورشید بهبهان — تمام حقوق محفوظ است.</span>
+      <span>مسیر قبولی، از خورشید روشن می‌شود.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
